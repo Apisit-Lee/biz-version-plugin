@@ -1,6 +1,6 @@
 {
   "name": "biz-version-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A biz version control flow.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,11 @@
     "publish:minor": "npm version minor && git push --follow-tags && npm publish",
     "publish:patch": "npm version patch && git push --follow-tags && npm publish"
   },
-  "keywords": ["webpack", "biz", "version"],
+  "keywords": [
+    "webpack",
+    "biz",
+    "version"
+  ],
   "author": "Apisit Lee",
   "license": "ISC",
   "devDependencies": {
