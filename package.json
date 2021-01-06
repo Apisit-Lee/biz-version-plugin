@@ -4,7 +4,9 @@
   "description": "A biz version control flow.",
   "main": "index.js",
   "scripts": {
-    "publish": ""
+    "publish:major": "npm version major && git push --follow-tags && npm publish",
+    "publish:minor": "npm version minor && git push --follow-tags && npm publish",
+    "publish:patch": "npm version patch && git push --follow-tags && npm publish"
   },
   "keywords": ["webpack", "biz", "version"],
   "author": "Apisit Lee",
