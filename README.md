@@ -1,5 +1,7 @@
 # Biz Version Plugin
 
+[https://github.com/Apisit-Lee/biz-version-plugin](https://github.com/Apisit-Lee/biz-version-plugin)
+
 BizVersionPlugin is a webpack plugin, witch provide an environment ignored version update flow based on version value in package.json.
 
 It has no relation with bundle hash, but biz version only. So, when you change version value in package.json file and make a deployment, you may need an force reload to update front end cache.
