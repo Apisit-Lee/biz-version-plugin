@@ -1,6 +1,6 @@
 {
   "name": "biz-version-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A biz version control flow.",
   "main": "index.js",
   "scripts": {
