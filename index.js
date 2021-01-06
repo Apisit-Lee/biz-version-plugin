@@ -98,7 +98,7 @@ class BizVersionPlugin {
 		let apis = {
 			state: `OK:${mode}`
 		};
-		const build = require('./biz-apis');
+		const build = require('./build');
 		apis.check = (context) => build()[mode](context);
 
 		this.script = `
@@ -120,14 +120,14 @@ class BizVersionPlugin {
 			try {
 				const htmlFiles = [];
 				const htmlNameReg = /^.*\.html/gim;
-				const insertPlaceReg = /(.*)(\<body\>.*)/gim;
+				const insertPlaceReg = /(.*)(<body>.*)/gim;
 				Object.keys(this.compilation.assets).forEach((item) => {
 					if (htmlNameReg.test(item)) {
 						htmlFiles.push(item);
 					}
 				});
-				console.log('html files: ', htmlFiles);
 				htmlFiles.forEach(htmlFile => {
+					console.log('html file: ', htmlFile);
 					let htmlStr = this.compilation.assets[htmlFile].source();
 					htmlStr = htmlStr.replace(insertPlaceReg, `$1${this.script}$2`);
 
