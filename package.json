@@ -1,0 +1,19 @@
+{
+  "name": "biz-version-plugin",
+  "version": "1.0.0",
+  "description": "A biz version control flow.",
+  "main": "index.js",
+  "scripts": {
+    "publish": ""
+  },
+  "keywords": ["webpack", "biz", "version"],
+  "author": "Apisit Lee",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
